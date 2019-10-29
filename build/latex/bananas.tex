@@ -89,6 +89,227 @@
 
 
 
+\chapter{Document Title}
+\label{\detokenize{sample:document-title}}\label{\detokenize{sample::doc}}
+
+\section{Subtitle}
+\label{\detokenize{sample:subtitle}}
+\begin{sphinxShadowBox}
+\sphinxstyletopictitle{Overview}
+\begin{itemize}
+\item {} 
+\phantomsection\label{\detokenize{sample:id4}}{\hyperref[\detokenize{sample:document-title}]{\sphinxcrossref{Document Title}}}
+\begin{itemize}
+\item {} 
+\phantomsection\label{\detokenize{sample:id5}}{\hyperref[\detokenize{sample:subtitle}]{\sphinxcrossref{Subtitle}}}
+\begin{itemize}
+\item {} 
+\phantomsection\label{\detokenize{sample:id6}}{\hyperref[\detokenize{sample:section-1}]{\sphinxcrossref{Section 1}}}
+
+\item {} 
+\phantomsection\label{\detokenize{sample:id7}}{\hyperref[\detokenize{sample:examples}]{\sphinxcrossref{Examples}}}
+
+\end{itemize}
+
+\end{itemize}
+
+\end{itemize}
+\end{sphinxShadowBox}
+
+
+\subsection{Section 1}
+\label{\detokenize{sample:section-1}}
+Text can be \sphinxstyleemphasis{italicized} or \sphinxstylestrong{bolded}  as well as \sphinxcode{\sphinxupquote{monospaced}}.
+You can *escape certain* special characters.
+
+
+\subsubsection{Subsection 1 (Level 2)}
+\label{\detokenize{sample:subsection-1-level-2}}
+Some section 2 text
+
+
+\paragraph{Sub-subsection 1 (level 3)}
+\label{\detokenize{sample:sub-subsection-1-level-3}}
+Some more text.
+
+
+\subsection{Examples}
+\label{\detokenize{sample:examples}}
+
+\subsubsection{Comments}
+\label{\detokenize{sample:comments}}
+Special notes that are not shown but might come out as HTML comments
+
+
+\subsubsection{Images}
+\label{\detokenize{sample:images}}
+Add an image with:
+
+\noindent\sphinxincludegraphics[width=200\sphinxpxdimen,height=100\sphinxpxdimen]{{screenshots/file}.png}
+
+You can inline an image or other directive with the \sphinxincludegraphics{{image/image}.png} command.
+
+
+\subsubsection{Lists}
+\label{\detokenize{sample:lists}}\begin{itemize}
+\item {} 
+Bullet are made like this
+
+\item {} \begin{description}
+\item[{Point levels must be consistent}] \leavevmode\begin{itemize}
+\item {} \begin{description}
+\item[{Sub-bullets}] \leavevmode\begin{itemize}
+\item {} 
+Sub-sub-bullets
+
+\end{itemize}
+
+\end{description}
+
+\end{itemize}
+
+\end{description}
+
+\item {} 
+Lists
+
+\end{itemize}
+\begin{description}
+\item[{Term}] \leavevmode
+Definition for term
+
+\item[{Term2}] \leavevmode
+Definition for term 2
+
+\end{description}
+\begin{quote}\begin{description}
+\item[{List of Things}] \leavevmode
+item1 - these are ‘field lists’ not bulleted lists
+item2
+item 3
+
+\item[{Something}] \leavevmode
+single item
+
+\item[{Someitem}] \leavevmode
+single item
+
+\end{description}\end{quote}
+
+
+\subsubsection{Preformatted text}
+\label{\detokenize{sample:preformatted-text}}
+A code example prefix must always end with double colon like it’s presenting something:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+   \PYG{n}{Anything} \PYG{n}{indented} \PYG{o+ow}{is} \PYG{n}{part} \PYG{n}{of} \PYG{n}{the} \PYG{n}{preformatted} \PYG{n}{block}
+  \PYG{n}{Until}
+ \PYG{n}{It} \PYG{n}{gets} \PYG{n}{back} \PYG{n}{to}
+\PYG{n}{Allll} \PYG{n}{the} \PYG{n}{way} \PYG{n}{left}
+\end{sphinxVerbatim}
+
+Now we’re out of the preformatted block.
+
+
+\subsubsection{Code blocks}
+\label{\detokenize{sample:code-blocks}}
+There are three equivalents: \sphinxcode{\sphinxupquote{code}}, \sphinxcode{\sphinxupquote{sourcecode}}, and \sphinxcode{\sphinxupquote{code-block}}.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k}{print}\PYG{p}{(}\PYG{n}{help}\PYG{p}{(}\PYG{n}{os}\PYG{p}{)}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Equivalent}
+\end{sphinxVerbatim}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Equivalent}
+\end{sphinxVerbatim}
+
+
+\subsubsection{Links}
+\label{\detokenize{sample:links}}
+Web addresses by themselves will auto link, like this: \sphinxurl{https://www.devdungeon.com}
+
+You can also inline custom links: \sphinxhref{https://www.google.com}{Google search engine}
+
+This is a simple \sphinxhref{https://www.google.com}{link} to Google with the link defined separately.
+
+This is a link to the \sphinxhref{http://www.python.org/}{Python website}.
+
+This is a link back to {\hyperref[\detokenize{sample:section-1}]{\sphinxcrossref{Section 1}}}. You can link based off of the heading name
+within a document.
+
+
+\subsubsection{Footnotes}
+\label{\detokenize{sample:footnotes}}
+Footnote Reference %
+\begin{footnote}[1]\sphinxAtStartFootnote
+This is footnote number one that would go at the bottom of the document.
+%
+\end{footnote}
+
+Or autonumbered {[}\#{]}
+
+
+\subsubsection{Lines/Transitions}
+\label{\detokenize{sample:lines-transitions}}
+Any 4+ repeated characters with blank lines surrounding it becomes an hr line, like this.
+
+
+\bigskip\hrule\bigskip
+
+
+
+\subsubsection{Tables}
+\label{\detokenize{sample:tables}}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+Time
+&\sphinxstyletheadfamily 
+Number
+&\sphinxstyletheadfamily 
+Value
+\\
+\hline
+12:00
+&
+42
+&
+2
+\\
+\hline
+23:00
+&
+23
+&
+4
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\subsubsection{Preserving line breaks}
+\label{\detokenize{sample:preserving-line-breaks}}
+Normally you can break the line in the middle of a paragraph and it will
+ignore the newline. If you want to preserve the newlines, use the \sphinxcode{\sphinxupquote{\textbar{}}} prefix
+on the lines. For example:
+
+\begin{DUlineblock}{0em}
+\item[] These lines will
+\item[] break exactly
+\item[] where we told them to.
+\end{DUlineblock}
+
+
 \chapter{Indices and tables}
 \label{\detokenize{index:indices-and-tables}}\begin{itemize}
 \item {} 

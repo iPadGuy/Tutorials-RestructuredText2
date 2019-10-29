@@ -10,6 +10,8 @@ Welcome to Bananas's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   sample
+
 
 
 Indices and tables

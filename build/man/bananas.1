@@ -30,6 +30,214 @@ level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
 .\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
 .in \\n[rst2man-indent\\n[rst2man-indent-level]]u
 ..
+.SH DOCUMENT TITLE
+.SS Subtitle
+.SS Overview
+.INDENT 0.0
+.IP \(bu 2
+\fI\%Document Title\fP
+.INDENT 2.0
+.IP \(bu 2
+\fI\%Subtitle\fP
+.INDENT 2.0
+.IP \(bu 2
+\fI\%Section 1\fP
+.IP \(bu 2
+\fI\%Examples\fP
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Section 1
+.sp
+Text can be \fIitalicized\fP or \fBbolded\fP  as well as \fBmonospaced\fP\&.
+You can *escape certain* special characters.
+.SS Subsection 1 (Level 2)
+.sp
+Some section 2 text
+.SS Sub\-subsection 1 (level 3)
+.sp
+Some more text.
+.SS Examples
+.SS Comments
+.sp
+Special notes that are not shown but might come out as HTML comments
+.SS Images
+.sp
+Add an image with:
+[image: alternate text]
+[image]
+.sp
+You can inline an image or other directive with the [image: (missing image text)]
+[image]
+ command.
+.SS Lists
+.INDENT 0.0
+.IP \(bu 2
+Bullet are made like this
+.IP \(bu 2
+.INDENT 2.0
+.TP
+.B Point levels must be consistent
+.INDENT 7.0
+.IP \(bu 2
+.INDENT 2.0
+.TP
+.B Sub\-bullets
+.INDENT 7.0
+.IP \(bu 2
+Sub\-sub\-bullets
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.IP \(bu 2
+Lists
+.UNINDENT
+.INDENT 0.0
+.TP
+.B Term
+Definition for term
+.TP
+.B Term2
+Definition for term 2
+.UNINDENT
+.INDENT 0.0
+.TP
+.B List of Things
+item1 \- these are \(aqfield lists\(aq not bulleted lists
+item2
+item 3
+.TP
+.B Something
+single item
+.TP
+.B Someitem
+single item
+.UNINDENT
+.SS Preformatted text
+.sp
+A code example prefix must always end with double colon like it\(aqs presenting something:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+   Anything indented is part of the preformatted block
+  Until
+ It gets back to
+Allll the way left
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Now we\(aqre out of the preformatted block.
+.SS Code blocks
+.sp
+There are three equivalents: \fBcode\fP, \fBsourcecode\fP, and \fBcode\-block\fP\&.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+import os
+print(help(os))
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+# Equivalent
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+# Equivalent
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Links
+.sp
+Web addresses by themselves will auto link, like this: \fI\%https://www.devdungeon.com\fP
+.sp
+You can also inline custom links: \fI\%Google search engine\fP
+.sp
+This is a simple \fI\%link\fP to Google with the link defined separately.
+.sp
+This is a link to the \fI\%Python website\fP\&.
+.sp
+This is a link back to \fI\%Section 1\fP\&. You can link based off of the heading name
+within a document.
+.SS Footnotes
+.sp
+Footnote Reference [1]
+.IP [1] 5
+This is footnote number one that would go at the bottom of the document.
+.sp
+Or autonumbered [#]
+.IP [2] 5
+This automatically becomes second, based on the 1 already existing.
+.SS Lines/Transitions
+.sp
+Any 4+ repeated characters with blank lines surrounding it becomes an hr line, like this.
+
+.sp
+.ce
+----
+
+.ce 0
+.sp
+.SS Tables
+.TS
+center;
+|l|l|l|.
+_
+T{
+Time
+T}	T{
+Number
+T}	T{
+Value
+T}
+_
+T{
+12:00
+T}	T{
+42
+T}	T{
+2
+T}
+_
+T{
+23:00
+T}	T{
+23
+T}	T{
+4
+T}
+_
+.TE
+.SS Preserving line breaks
+.sp
+Normally you can break the line in the middle of a paragraph and it will
+ignore the newline. If you want to preserve the newlines, use the \fB|\fP prefix
+on the lines. For example:
+.nf
+These lines will
+break exactly
+where we told them to.
+.fi
+.sp
 .INDENT 0.0
 .IP \(bu 2
 genindex

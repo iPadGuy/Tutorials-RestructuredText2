@@ -1,6 +1,12 @@
 Welcome to Bananas’s documentation!
 ***********************************
 
+Contents:
+
+* Document Title
+
+  * Subtitle
+
 
 Indices and tables
 ******************

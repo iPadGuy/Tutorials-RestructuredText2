@@ -2,7 +2,7 @@
 <ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
   <head>
     <meta name="dtb:uid" content="unknown"/>
-    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:depth" content="3"/>
     <meta name="dtb:totalPageCount" content="0"/>
     <meta name="dtb:maxPageNumber" content="0"/>
   </head>
@@ -15,6 +15,42 @@
         <text>Welcome to Bananas’s documentation!</text>
       </navLabel>
       <content src="index.xhtml" />  
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>Document Title</text>
+      </navLabel>
+      <content src="sample.xhtml" />  
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>Document Title</text>
+        </navLabel>
+        <content src="sample.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>Subtitle</text>
+        </navLabel>
+        <content src="sample.xhtml#subtitle" />  
+        <navPoint id="navPoint5" playOrder="3">
+          <navLabel>
+            <text>Subtitle</text>
+          </navLabel>
+          <content src="sample.xhtml#subtitle" />  
+        </navPoint>
+        <navPoint id="navPoint6" playOrder="4">
+          <navLabel>
+            <text>Section 1</text>
+          </navLabel>
+          <content src="sample.xhtml#section-1" />  
+        </navPoint>
+        <navPoint id="navPoint7" playOrder="5">
+          <navLabel>
+            <text>Examples</text>
+          </navLabel>
+          <content src="sample.xhtml#examples" />  
+        </navPoint>
+      </navPoint>
     </navPoint>
   </navMap>
 </ncx>
