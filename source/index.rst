@@ -8,9 +8,11 @@ Welcome to Bananas's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    sample
+
+   :caption: Contents:
+
 
 
 
