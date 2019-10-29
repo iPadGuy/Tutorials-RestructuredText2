@@ -1,0 +1,12 @@
+Welcome to Bananas’s documentation!
+***********************************
+
+
+Indices and tables
+******************
+
+* Index
+
+* Module Index
+
+* Search Page
